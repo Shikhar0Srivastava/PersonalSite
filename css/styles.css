@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  text-align: center;
+  /* only works with elements that are not width restricted */
+  /*font-family: verdana, sans-serif;*/
+  /*show verdana and if it isn't installed, show the default sans-serif. more that 2 styles can be specified this way i.e most to least specific
+  provided they are all from the same family*/
+  font-family: 'Merriweather', serif;
+  color: #40514E;
+}
+
+/* if it is restricted, we use the auto tag to center it. */
+h1 {
+  margin: 50px auto 0 auto;
+  /* width: 10%; */
+  /* margin: 0 auto 0 auto;      /*[top right bottom left]. wo do this because we want to center horizontally.*/
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;    /*we use percentages or em instead of pixels so that users with different default font sizes can also see these changes accordingly. 100%=16px=1em.*/
+  /* both % and em are inherited. so size of element=sum of sizes of element and all its parents. to prevent this rem can be used */
+
+  color: #66BFBF;
+  /* line-height: 2; */
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 0.625rem;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+a:hover{
+  color: #EAF6F6;
+}
+
+.Top-container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
+
+hr{
+  border-style: dotted none none;
+  border-color: #EAF6F6;
+  border-width: 6px;
+  width: 4%;
+  margin: 100px auto;
+}
+p{
+  line-height: 2;
+}
+.pro {
+  text-decoration: underline;
+}
+
+.cloud2 {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.cloud1 {
+  position: absolute;
+  right: 400px;
+  top: 50px;
+}
+.skill-row{
+  width: 50%;
+  margin: 100px auto;    /*top-bottom right-left*/
+  text-align: left;
+}
+.programming{
+  width: 25%;
+  float: left;
+  /* img floats to left and whatevers below in the same parent comes to the right. used to wrap text around img and not positioning */
+  margin-right: 30px
+}
+.cubing{
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+/* .skill-d1{
+  clear: left;
+  /* clears anything to the left. if theres an img, the text just moves down*/
+/*}
+.skill-d2{
+  clear: right;
+} */
+.bottom-container{
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+.copyright{
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+.middle-container{
+  margin: 100px 0;
+}
+.intro{
+  width: 0.3rem;
+  margin: auto;
+}
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
